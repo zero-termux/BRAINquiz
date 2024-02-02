@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>brain quiz</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">    
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+<div class="loading">
+    <div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+</div>   
+    
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-primary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <h1><i class="bi bi-person-fill"></i></h1>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container2 p-3">
+      <div class="soal1 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 1</div>
+          <div class="card-body">
+            <p class="card-title mb-4"> Apa yang dimaksud dengan "skill" karakter dalam Free Fire ?</p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault1"
+                id="flexRadioDefault1"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Senjata andalan karakter
+              </label>
+            </div>
+
+            <div id="benar1" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault1"
+                id="flexRadioDefault2"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Kemampuan khusus yang dimiliki karakter
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault1"
+                id="flexRadioDefault3"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault3">
+                Tingkat keahlian pemain
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault1"
+                id="flexRadioDefault4"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault4">
+                Kumpulan poin kemenangan
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal2 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 2</div>
+          <div class="card-body">
+            <p class="card-title mb-4"> Ketika karakter "Alok" menggunakan skill-nya, apa kata-kata yang sering dia ucapkan ?</p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault2"
+                id="flexRadioDefault5"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault5">
+                "Mari berpesta dengan Alok!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault2"
+                id="flexRadioDefault6"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault6">
+                "Semua orang bisa jadi bintang bersama Alok!"
+              </label>
+            </div>
+
+            <div id="benar2" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault2"
+                id="flexRadioDefault7"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault7">
+                "Ayo bergerak bersama, teman-teman!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault2"
+                id="flexRadioDefault8"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault8">
+                "Jangan khawatir, Alok di sini untuk menyelamatkan kita!"
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal3 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 3</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Apa istilah umum untuk kemampuan yang dapat di-upgrade karakter dalam Free Fire ?</p>
+
+            <div id="benar3" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault3"
+                id="flexRadioDefault9"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault9">
+                Augmentasi
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault3"
+                id="flexRadioDefault10"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault10">
+                Eksploit
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault3"
+                id="flexRadioDefault11"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault11">
+                Peningkatan
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault3"
+                id="flexRadioDefault12"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault12">
+                Evolusi
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal4 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 4</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Ketika karakter "Joseph" mendapatkan kemenangan, apa yang sering dia ucapkan ?</p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault4"
+                id="flexRadioDefault13"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault13">
+                "Joseph, pembawa keberuntungan!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault4"
+                id="flexRadioDefault14"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault14">
+                "Mari rayakan kemenangan ini bersama!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault4"
+                id="flexRadioDefault15"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault15">
+                "Semua orang hebat hari ini!"
+              </label>
+            </div>
+
+            <div id="benar4" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault4"
+                id="flexRadioDefault16"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault16">
+               "Kemenangan kita, saudara-saudara!"
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal5 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 5</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Apa perbedaan antara "Active Skill" dan "Passive Skill" dalam Free Fire ?
+            </p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault5"
+                id="flexRadioDefault17"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault17">
+                Active Skill hanya berlaku sekali, sedangkan Passive Skill terus aktif.
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault5"
+                id="flexRadioDefault18"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault18">
+                Active Skill hanya digunakan saat pertempuran, sedangkan Passive Skill selalu aktif.
+              </label>
+            </div>
+
+            <div id="benar5" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault5"
+                id="flexRadioDefault19"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault19">
+                Active Skill harus diaktifkan oleh pemain, sedangkan Passive Skill otomatis aktif.
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault5"
+                id="flexRadioDefault20"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault20">
+                Active Skill memberikan bonus damage, sedangkan Passive Skill memberikan perlindungan.
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal6 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 6</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Apa yang sering diucapkan oleh karakter "Kla" ketika mengalahkan musuh ?</p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault6"
+                id="flexRadioDefault21"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault21">
+                "Kla menang, selamanya!"
+              </label>
+            </div>
+
+            <div id="benar6" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault6"
+                id="flexRadioDefault22"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault22">
+                "Ini baru awal dari kejayaan Kla!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault6"
+                id="flexRadioDefault23"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault23">
+                "Tidak ada yang bisa menghentikan Kla!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault6"
+                id="flexRadioDefault24"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault24">
+                "Musuh yang baik, tapi Kla lebih baik!"
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal7 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 7</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Apa yang dimaksud dengan "Cooldown" dalam konteks skill karakter ?</p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault7"
+                id="flexRadioDefault25"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault25">
+                Masa pemulihan setelah terkena serangan musuh
+              </label>
+            </div>
+
+            <div id="benar7" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault7"
+                id="flexRadioDefault26"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault26">
+               Waktu yang diperlukan untuk menggunakan kembali skill setelah digunakan
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault7"
+                id="flexRadioDefault27"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault27">
+                Jarak tempuh karakter setelah menggunakan skill
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault7"
+                id="flexRadioDefault28"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault28">
+                Jumlah energi yang diperlukan untuk menggunakan skill
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal8 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 8</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Apa yang sering diucapkan oleh karakter "Laura" saat sedang bersiap untuk pertempuran ?
+            </p>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault8"
+                id="flexRadioDefault29"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault29">
+                "Ketahuilah, Laura tidak pernah takut!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault8"
+                id="flexRadioDefault30"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault30">
+                "Hari ini adalah hari kemenangan kita!"
+              </label>
+            </div>
+
+            <div id="benar8 " class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault8"
+                id="flexRadioDefault31"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault31">
+                "Waktu untuk memenangkan pertempuran!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault8"
+                id="flexRadioDefault32"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault32">
+                "Siapkan diri, pertempuran akan dimulai!"
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal9 mb-3 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 9</div>
+          <div class="card-body">
+            <p class="card-title mb-4"> Apa yang menjadi keunggulan dari skill "Healing Circle" milik karakter "Dasha" ?</p>
+
+            <div id="benar9" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault9"
+                id="flexRadioDefault33"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault33">
+                Memberikan perlindungan tambahan
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault9"
+                id="flexRadioDefault34"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault34">
+                Mempercepat pergerakan karakter
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault9"
+                id="flexRadioDefault35"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault35">
+               Menyembuhkan kesehatan sekitar
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault9"
+                id="flexRadioDefault36"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault36">
+               Mengeluarkan serangan area efek tinggi
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="soal10 mb-5 shadow">
+        <div class="card">
+          <div class="card-header"><i class="bi bi-list-ul me-3"></i>SOAL 10</div>
+          <div class="card-body">
+            <p class="card-title mb-4">Ketika karakter "Antonio" dieliminasi oleh musuh, apa yang biasanya dia katakan ?
+            </p>
+
+            <div id="benar10" class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault10"
+                id="flexRadioDefault37"
+                value="10"
+              />
+              <label class="form-check-label" for="flexRadioDefault37">
+                "Bagaimana bisa aku kalah?"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault10"
+                id="flexRadioDefault38"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault38">
+                "Sungguh, kekuatanmu luar biasa!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault10"
+                id="flexRadioDefault39"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault39">
+                "Jangan khawatir, aku akan kembali!"
+              </label>
+            </div>
+
+            <div class="form-check mb-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault10"
+                id="flexRadioDefault40"
+                value="0"
+              />
+              <label class="form-check-label" for="flexRadioDefault40">
+                "Antonio jatuh, tapi tidak menyerah!"
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <center>
+      <button type="submit" id="kirim" class="btn btn-primary mb-5">Submit</button>
+      </center>
+
+      <div class="jarak p-5 mb-5">
+        <p class="text-center">- untuk keterangan lebih lanjut silahkan cek di bawah ini -</p>
+        <hr>
+      </div>
+</div>
+
+<center>
+<footer>
+<div class="feed">
+  <a href="https://github.com/zero-termux">
+    <i class="bi bi-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/m-abid-falih-08a4952aa?trk=contact-info" class="ms-1">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="mailto: abidflh14@gmail.com" class="ms-1">
+    <i class="bi bi-envelope-at"></i>
+  </a>
+</div>
+</footer>
+</center>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main3.js"></script>
+  </body>
+</html> 

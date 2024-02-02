@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>brain quiz</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">   
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div class="loading">
+    <div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden"></span>
+</div>
+</div>   
+    
+    <header>
+      <section class="alert">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+  <strong>Perhatian!</strong> Selamat datang di brain quiz by abid, sebelum mulai mengerjakan anda bisa memasukkan <strong>Nama anda</strong> dan <strong>pilih quiz</strong> terlebih dahulu, untuk keterangan lebih lanjut silahkan membaca <strong>Panduan quiz</strong>
+  <button id="alrt" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+      </section>
+    </header>
+  
+  
+    
+<div class="container">
+<section class="main fw-bold">
+  <h1 class="mb-2 text-center">
+    <i id="wlc">WELCOME</i>TO BRAIN QUIZ <i class="bi bi-pencil-square"></i>
+  </h1>
+
+
+<div class="row">
+  <div class="col-md">
+  <div class="hero mb-3">
+    <center>
+    <img src="brain.png" alt="brain">
+    </center>
+    <div class="cg text-center">
+      <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Panduan quiz ?
+     </button>
+    </div>
+  </div>
+ </div>
+ 
+<div id="nm" class="col-md">
+<div class="form text-left p-2 mb-5">
+    <form>
+  <div class="mb-3">
+    <label for="name" class="form-label">nama kamu :</label>
+    <input type="name" class="form-control" id="name" aria-describedby="name">
+    <div id="name" class="form-text">Masukkan nama mu untuk memulai quiz</div>
+    <select class="form-select mt-2 mb-2" aria-label="Default select example">
+  <option selected>Pilih quiz</option>
+  <option id="soal1">Quiz pendidikan</option>
+  <option id="soal2">Quiz free fire</option>
+  <option id="soal3">Quiz mobile legend</option>
+</select>
+  </div>
+  
+  <button id="nama" type="submit" class="btn btn-primary">Start quiz</button>
+</form>
+</div>
+</div> 
+</div>
+</section>
+    
+    
+    
+    
+    
+</div>
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 87, 180, 1)" offset="0%"></stop><stop stop-color="rgba(103.026, 175.276, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L12,58.3C24,57,48,53,72,50C96,47,120,43,144,43.3C168,43,192,47,216,40C240,33,264,17,288,8.3C312,0,336,0,360,3.3C384,7,408,13,432,23.3C456,33,480,47,504,50C528,53,552,47,576,41.7C600,37,624,33,648,38.3C672,43,696,57,720,63.3C744,70,768,70,792,60C816,50,840,30,864,33.3C888,37,912,63,936,65C960,67,984,43,1008,38.3C1032,33,1056,47,1080,48.3C1104,50,1128,40,1152,30C1176,20,1200,10,1224,10C1248,10,1272,20,1296,30C1320,40,1344,50,1368,48.3C1392,47,1416,33,1440,30C1464,27,1488,33,1512,41.7C1536,50,1560,60,1584,58.3C1608,57,1632,43,1656,43.3C1680,43,1704,57,1716,63.3L1728,70L1728,100L1716,100C1704,100,1680,100,1656,100C1632,100,1608,100,1584,100C1560,100,1536,100,1512,100C1488,100,1464,100,1440,100C1416,100,1392,100,1368,100C1344,100,1320,100,1296,100C1272,100,1248,100,1224,100C1200,100,1176,100,1152,100C1128,100,1104,100,1080,100C1056,100,1032,100,1008,100C984,100,960,100,936,100C912,100,888,100,864,100C840,100,816,100,792,100C768,100,744,100,720,100C696,100,672,100,648,100C624,100,600,100,576,100C552,100,528,100,504,100C480,100,456,100,432,100C408,100,384,100,360,100C336,100,312,100,288,100C264,100,240,100,216,100C192,100,168,100,144,100C120,100,96,100,72,100C48,100,24,100,12,100L0,100Z"></path></svg>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Panduan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li class="mb-1">Masukkan nama anda.</li>
+          <li class="mb-1">Pilih quiz yang ingin anda mainkan</li>
+          <li class="mb-1">Quiz quiz berbasis pilihan ganda 10 soal yang harus dipilih salah satu.</li>
+          <li class="mb-1">Jika sudah selesai mengerjakan jangan lupa untuk submit.</li>
+          <li class="mb-1">Dibagian akhir akan ditampilkan skor quiz yang sudah anda kerjakan.</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+  </body>
+</html>

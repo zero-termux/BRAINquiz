@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.alert-info {
+  background-color: rgb(153,200,255)!important;
+}
+
+.main h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: 'Rubik', sans-serif!important;
+}
+
+.main i {
+  color: rgb(11,127,255);
+}
+
+#wlc {
+  font-family: 'Rubik Doodle Shadow'!important;
+  margin-right: 12px!important;
+}
+
+.hero img {
+  width: 90%;
+}
+
+.cg button {
+  border: none;
+  background-color: white!important;
+  color: rgb(58,58,58);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form button {
+  width: 40%!important;
+}
+
+#nm {
+  padding-top: 10%;
+}
+
+nav {
+  height: 60px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Rubik Doodle Shadow'!important;
+}
+
+.container2 {
+  position: relative;
+  top: 70px;
+}
+
+.container3 {
+  position: relative;
+  top: 65px;
+}
+
+#kirim {
+  width: 90%!important;
+}
+
+.card-title {
+  font-weight: 400!important;
+}
+
+.card-header {
+  font-weight: 450!important;
+}
+
+.card-body input {
+  border: 1px solid rgb(58,58,58);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(11,127,255);
+  font-size: 1.5rem;
+  position: relative!important;
+  bottom: -20px;
+  transition: .3s ease-in-out;
+}
+
+footer a:hover {
+  color: rgb(0, 87, 180);
+}
+
+.medsos a {
+  text-decoration: none;
+  color: rgb(11,127,255);
+  font-size: 1.5rem;
+  position: relative!important;
+  bottom: -20px;
+  transition: .3s ease-in-out;
+}
+
+.medsos a:hover {
+  color: rgb(0, 87, 180);
+}
+
+.card-body input {
+  cursor: pointer;
+}
+
+.card-body label {
+  cursor: pointer;
+}
+
+.judul h1 {
+  font-family: 'Rubik Doodle Shadow'!important;
+}
+
+.judul p {
+  font-size: 20px!important;
+  color: #383838;
+  font-weight: 450!important;
+}
+
+.nilai h2 {
+  font-family: 'Rubik Doodle Shadow'!important;
+  font-size: 100px;
+  color: rgb(11,127,255);
+}
+
+.loading {
+  background-color: white!important;
+  position: fixed!important;
+  width: 100%;
+  height: 100%;
+  z-index: 99999!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-border {
+  position: relative!important;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .container2 {
+    width: 70%!important;
+    margin: 0px auto;
+  }
+
+  .container3 {
+    width: 90%!important;
+    margin: 0px auto;
+  }
+
+}
